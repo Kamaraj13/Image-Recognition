@@ -1,0 +1,19 @@
+version 0.2
+
+phases:
+  install:
+    runtime-version:
+      python: 3.9
+  build:
+    commands:
+      - echo compiling has started 
+      - echo compiling the python code..
+      - python new.py
+  post_build:
+    commands:
+      - echo  compiling process has been completed
+artifacts:
+  files:
+    - new.py
+
+      
